@@ -1,5 +1,7 @@
 # qi_course
 
+This info is mainly for the developers and students do not need to go through them.
+
 Shared Python utilities for the "Developing Quantitative Intuition in
 Water and Weather Science" course labs. Built so every lab notebook can
 reuse the same, tested data-loading, numerics, and plotting code instead
@@ -64,7 +66,7 @@ qc.histogram_with_fit(temps["high_temp_c"], grid, pdf,
 
 - `hello_qi_course.ipynb` -- a minimal sanity check. Install the
   library, print the version, run one function from each lab. This is
-  meant to be the very first thing anyone (Dale included) runs, before
+  meant to be the very first thing anyone runs, before
   looking at real lab content, to confirm the install pattern works on
   their machine/Colab account.
 - `lab2_temperature_distributions_demo.ipynb` -- a first working draft
@@ -85,7 +87,7 @@ qc.histogram_with_fit(temps["high_temp_c"], grid, pdf,
 
 ## Releasing an update later
 
-1. Make your change to a module (or add a new one).
+1. Make change to a module (or add a new one).
 2. Run `python smoke_test.py` locally and confirm it passes and the
    saved plots look right.
 3. Bump `version` in `pyproject.toml` and `__version__` in
@@ -94,17 +96,3 @@ qc.histogram_with_fit(temps["high_temp_c"], grid, pdf,
 5. Update the `@v0.2.0` in notebook install cells to `@v0.3.0` when
    you're ready for everyone to pick up the change -- not before, so a
    change never silently affects someone mid-lab.
-
-## Known follow-up (do this before real students touch these labs)
-
-- `data_io.load_demo_harvey_precip()` (Lab 1) currently returns
-  synthetic, illustrative rainfall data, not the real historical
-  Hurricane Harvey record. Before Lab 1 goes live, replace it with a
-  loader that pulls an actual gauge record, for example from NOAA's
-  NCEI archives or a USGS gauge API.
-- `data_io.load_demo_july_highs()` (Lab 2) currently returns synthetic
-  daily highs drawn directly from a normal distribution -- so of course
-  it looks Gaussian. Before Lab 2 goes live, replace it with a loader
-  for a real, multi-decade station record (e.g., NOAA's GHCN-Daily
-  archive), so "is this approximately Gaussian?" is a question students
-  answer from real observations, not a property built into the demo.
