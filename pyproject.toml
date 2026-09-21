@@ -1,0 +1,18 @@
+[project]
+name = "qi_course"
+version = "0.2.0"
+description = "Shared utilities for the Developing Quantitative Intuition in Water and Weather Science course labs"
+authors = [{name = "Sahar Karimi"}]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "matplotlib>=3.6",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["qi_course"]
