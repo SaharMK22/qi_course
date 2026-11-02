@@ -19,12 +19,23 @@ value automatically -- it exists so a student or instructor can run
 if something looks unexpected.
 """
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 from .numerics import trapezoid_integral, finite_difference
 from .data_io import load_demo_harvey_precip, load_demo_july_highs, list_demo_cities
-from .plotting import quick_timeseries_plot, histogram_with_fit
-from .stats_utils import descriptive_stats, fit_normal_pdf
+from .plotting import quick_timeseries_plot, histogram_with_fit, temperature_bins
+from .stats_utils import (
+    descriptive_stats, fit_normal_pdf, fraction_within,
+    wet_day_summary, fit_gamma_pdf, gamma_pdf, gamma_exceedance, empirical_exceedance,
+)
+from .stations import (
+    list_stations, load_station, find_stations, station_coverage,
+    month_values, annual_totals,
+)
+from .fields import (
+    list_cases, load_case, gradient, divergence, vorticity,
+    geostrophic_wind, plot_field_map, grid_spacing_m,
+)
 
 __all__ = [
     "trapezoid_integral",
@@ -34,6 +45,27 @@ __all__ = [
     "list_demo_cities",
     "quick_timeseries_plot",
     "histogram_with_fit",
+    "temperature_bins",
     "descriptive_stats",
     "fit_normal_pdf",
+    "fraction_within",
+    "wet_day_summary",
+    "fit_gamma_pdf",
+    "gamma_pdf",
+    "gamma_exceedance",
+    "empirical_exceedance",
+    "list_stations",
+    "load_station",
+    "find_stations",
+    "station_coverage",
+    "month_values",
+    "annual_totals",
+    "list_cases",
+    "load_case",
+    "gradient",
+    "divergence",
+    "vorticity",
+    "geostrophic_wind",
+    "plot_field_map",
+    "grid_spacing_m",
 ]

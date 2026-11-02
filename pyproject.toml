@@ -1,6 +1,6 @@
 [project]
 name = "qi_course"
-version = "0.2.0"
+version = "0.3.0"
 description = "Shared utilities for the Developing Quantitative Intuition in Water and Weather Science course labs"
 authors = [{name = "Sahar Karimi"}]
 requires-python = ">=3.9"
@@ -8,6 +8,7 @@ dependencies = [
     "numpy>=1.23",
     "pandas>=1.5",
     "matplotlib>=3.6",
+    "requests>=2.25",
 ]
 
 [build-system]
@@ -16,3 +17,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 packages = ["qi_course"]
+
+[tool.setuptools.package-data]
+qi_course = ["data/*.csv", "data/daily/*.csv.gz", "data/reanalysis/*.npz"]
