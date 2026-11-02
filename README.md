@@ -1,11 +1,20 @@
 # qi_course
 
-This info is mainly for the developers and students do not need to go through them.
+The rest of this page is for developers. To run the labs, use the buttons below.
 
 Shared Python utilities and real data for the "Developing Quantitative
 Intuition in Water and Weather Science" course labs. Built so every lab
 notebook can reuse the same, tested data-loading, numerics, statistics, and
 plotting code instead of each lab reinventing it.
+
+## Open the labs in Colab
+
+| Notebook | Open |
+|---|---|
+| Install check (hello) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaharMK22/qi_course/blob/main/hello_qi_course.ipynb) |
+| Lab 2: Temperature distributions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaharMK22/qi_course/blob/main/lab2_temperature_distributions.ipynb) |
+| Lab 3: Precipitation distributions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaharMK22/qi_course/blob/main/lab3_precipitation_distributions.ipynb) |
+| Lab 6: Gradient, divergence and curl | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaharMK22/qi_course/blob/main/lab6_gradient_divergence_curl.ipynb) |
 
 ## Package layout
 
